@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+#root, html, body{
+  margin: auto;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.quote-box{
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  transition: all 1s;
+}
+
+.card{
+  background-color: whitesmoke;
+  max-width: 60%;
+  min-height: 45%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: -1px -1px 30px darkgray;
+
+  position: relative;
+}
+
+.quote{
+  display: flex;
+  align-items: center;
+
+  font-family: 'Spartan', sans-serif;
+  font-size: 1.5rem;
+
+  transition: all 1s;
+}
+
+.auth{
+  display: flex;
+  align-items: center;
+
+  color: #aaaaaa;
+  font-family: 'Spartan', sans-serif;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.next-quote {
+  position: absolute;
+  bottom: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 15%;
+  min-width: 30%;
+  max-width: 45%;
+  padding: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  
+  background-color: #d1d1d1;
+  border-radius: 2rem;
+}
+  
+.next-quote span {
+  color: rgb(95, 95, 95);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+  
+.next-quote:hover {
+  transition: all 0.9s;
+  opacity: 0.7;
+  background-color: rgb(95, 95, 95);
+}
+.next-quote:hover span{
+  color: #d1d1d1;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .card {
+      width: 80%;
+  }
+  .quote{
+    font-size: 1rem;
+  }
+  .next-quote{
+    height: 10%;
+  }
+}
